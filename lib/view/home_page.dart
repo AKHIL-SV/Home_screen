@@ -13,13 +13,13 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       extendBody: true,
       appBar: AppBar(
-        toolbarHeight: 56.h,
+        toolbarHeight: 56.sp,
         leadingWidth: 24.w,
         title: Container(
-          height: 33.h,
-          width: 240.w,
+          height: 33.sp,
+          width: 240.sp,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16.r),
+            borderRadius: BorderRadius.circular(16.sp),
             color: lightgray,
           ),
           padding: EdgeInsets.only(left: 13.w),
@@ -38,6 +38,7 @@ class HomePage extends StatelessWidget {
             'assets/icons/filter.png',
             height: 32.h,
             width: 32.w,
+            fit: BoxFit.contain,
           ),
           SizedBox(
             width: 9.w,
@@ -56,7 +57,7 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            height: 33.h,
+            height: 33.sp,
             width: double.infinity,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -101,8 +102,8 @@ class HomePage extends StatelessWidget {
         ],
       ),
       floatingActionButton: SizedBox(
-        height: 52.h,
-        width: 52.w,
+        height: 52.sp,
+        width: 52.sp,
         child: FloatingActionButton(
           elevation: 3,
           onPressed: () {},

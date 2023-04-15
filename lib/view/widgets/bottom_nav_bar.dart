@@ -17,59 +17,60 @@ class BottomNavBar extends StatelessWidget {
           child: SizedBox(
             height: 76.h,
             child: BottomNavigationBar(
-                backgroundColor: white,
-                currentIndex: 0,
-                type: BottomNavigationBarType.fixed,
-                selectedItemColor: orangeColor,
-                selectedLabelStyle: TextStyle(
-                  fontSize: 8.sp,
-                  fontWeight: FontWeight.w500,
-                ),
-                unselectedLabelStyle: TextStyle(
-                  fontSize: 8.sp,
-                  fontWeight: FontWeight.w500,
-                ),
-                items: [
-                  BottomNavigationBarItem(
-                      icon: Image.asset(
-                        'assets/icons/search.png',
-                        height: 28.h,
-                        width: 24.w,
-                        fit: BoxFit.contain,
-                      ),
-                      label: 'さがす'),
-                  BottomNavigationBarItem(
-                      icon: Image.asset(
-                        'assets/icons/bag.png',
-                        height: 28.h,
-                        width: 24.w,
-                        fit: BoxFit.contain,
-                      ),
-                      label: 'お仕事'),
-                  BottomNavigationBarItem(
-                      icon: SizedBox(
-                        height: 28.h,
-                        width: 24.w,
-                      ),
-                      label: '打刻する'),
-                  BottomNavigationBarItem(
-                      icon: Image.asset(
-                        'assets/icons/typing.png',
-                        height: 28.h,
-                        width: 24.w,
-                        fit: BoxFit.contain,
-                      ),
-                      label: 'チャット'),
-                  BottomNavigationBarItem(
+              backgroundColor: white,
+              currentIndex: 0,
+              type: BottomNavigationBarType.fixed,
+              selectedItemColor: orangeColor,
+              selectedLabelStyle: TextStyle(
+                fontSize: 8.sp,
+                fontWeight: FontWeight.w500,
+              ),
+              unselectedLabelStyle: TextStyle(
+                fontSize: 8.sp,
+                fontWeight: FontWeight.w500,
+              ),
+              items: [
+                BottomNavigationBarItem(
                     icon: Image.asset(
-                      'assets/icons/account.png',
+                      'assets/icons/search.png',
                       height: 28.h,
                       width: 24.w,
-                      fit: BoxFit.fitWidth,
+                      fit: BoxFit.contain,
                     ),
-                    label: 'マイページ',
+                    label: 'さがす'),
+                BottomNavigationBarItem(
+                    icon: Image.asset(
+                      'assets/icons/bag.png',
+                      height: 28.h,
+                      width: 24.w,
+                      fit: BoxFit.contain,
+                    ),
+                    label: 'お仕事'),
+                BottomNavigationBarItem(
+                    icon: SizedBox(
+                      height: 28.h,
+                      width: 24.w,
+                    ),
+                    label: '打刻する'),
+                BottomNavigationBarItem(
+                    icon: Image.asset(
+                      'assets/icons/typing.png',
+                      height: 28.h,
+                      width: 24.w,
+                      fit: BoxFit.contain,
+                    ),
+                    label: 'チャット'),
+                BottomNavigationBarItem(
+                  icon: Image.asset(
+                    'assets/icons/account.png',
+                    height: 28.h,
+                    width: 24.w,
+                    fit: BoxFit.contain,
                   ),
-                ]),
+                  label: 'マイページ',
+                ),
+              ],
+            ),
           ),
         ),
         Positioned(
