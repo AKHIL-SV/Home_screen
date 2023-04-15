@@ -4,6 +4,7 @@ import 'package:home_screen_jp/model/dates.dart';
 // colors
 const Color orangeColor = Color(0xffFAAA14);
 const Color white = Colors.white;
+const Color lightgray = Color(0xffF7F7F7);
 const Color black = Colors.black;
 const Color red = Color(0xffEE5F40);
 const Color deepred = Color(0xffFF6262);
@@ -11,12 +12,12 @@ const Color deepred = Color(0xffFF6262);
 // theme
 
 final theme = ThemeData(
-  canvasColor: Colors.grey,
+  canvasColor: lightgray,
   primaryColor: orangeColor,
   fontFamily: 'NotoSansJP',
   appBarTheme: const AppBarTheme(
     elevation: 0,
-    backgroundColor: Colors.transparent,
+    backgroundColor: white,
   ),
 );
 
