@@ -10,6 +10,7 @@ class BottomNavBar extends StatelessWidget {
     return Stack(
       children: [
         Container(
+          color: Colors.transparent,
           width: double.infinity,
           height: 86.h,
           alignment: Alignment.bottomCenter,

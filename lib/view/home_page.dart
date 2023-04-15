@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:home_screen_jp/constants.dart';
 import 'package:home_screen_jp/view/widgets/bottom_nav_bar.dart';
+import 'package:home_screen_jp/view/widgets/horizontal_list_date.dart';
+import 'package:home_screen_jp/view/widgets/job_info_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,6 +11,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       appBar: AppBar(
         toolbarHeight: 56.h,
         leadingWidth: 24.w,
@@ -50,11 +53,58 @@ class HomePage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: const BottomNavBar(),
+      body: Column(
+        children: [
+          Container(
+            height: 33.h,
+            width: double.infinity,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color(0xffFAAA14),
+                  Color(0xffFFD78D),
+                ],
+                begin: Alignment.bottomLeft,
+                end: Alignment.topRight,
+              ),
+            ),
+            alignment: Alignment.center,
+            child: Text(
+              '2022年 5月 26日（木）',
+              style: TextStyle(
+                fontSize: 14.sp,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+          Expanded(
+            child: SizedBox(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 24.h,
+                    ),
+                    SizedBox(
+                      height: 67.sp,
+                      child: const HorizontalListDates(),
+                    ),
+                    SizedBox(
+                      height: 16.h,
+                    ),
+                    JobInfoCard()
+                  ],
+                ),
+              ),
+            ),
+          )
+        ],
+      ),
       floatingActionButton: SizedBox(
         height: 52.h,
         width: 52.w,
         child: FloatingActionButton(
-          elevation: 0,
+          elevation: 3,
           onPressed: () {},
           backgroundColor: white,
           child: Icon(
