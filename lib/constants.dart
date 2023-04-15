@@ -11,6 +11,7 @@ const Color deepred = Color(0xffFF6262);
 // theme
 
 final theme = ThemeData(
+  canvasColor: Colors.grey,
   primaryColor: orangeColor,
   fontFamily: 'NotoSansJP',
   appBarTheme: const AppBarTheme(
