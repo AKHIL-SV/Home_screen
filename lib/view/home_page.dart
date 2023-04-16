@@ -102,8 +102,8 @@ class HomePage extends StatelessWidget {
         ],
       ),
       floatingActionButton: SizedBox(
-        height: 52.sp,
-        width: 52.sp,
+        height: 50.sp,
+        width: 50.sp,
         child: FloatingActionButton(
           elevation: 3,
           onPressed: () {},

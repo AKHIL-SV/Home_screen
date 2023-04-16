@@ -76,11 +76,27 @@ class BottomNavBar extends StatelessWidget {
         Positioned(
           left: 0,
           right: 0,
-          child: Image.asset(
-            'assets/icons/scan.png',
+          child: Container(
             height: 52.sp,
             width: 52.sp,
-            fit: BoxFit.contain,
+            decoration: const BoxDecoration(
+              shape: BoxShape.circle,
+              gradient: LinearGradient(
+                colors: [
+                  Color(0xffEDA827),
+                  Color(0xffFFDA96),
+                ],
+                begin: Alignment.bottomLeft,
+                end: Alignment.topRight,
+              ),
+            ),
+            alignment: Alignment.center,
+            child: Image.asset(
+              'assets/images/scan.png',
+              width: 31.sp,
+              height: 31.sp,
+              fit: BoxFit.contain,
+            ),
           ),
         ),
       ],
