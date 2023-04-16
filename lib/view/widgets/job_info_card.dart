@@ -68,7 +68,7 @@ class JobInfoCard extends StatelessWidget {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Container(
-                                      height: 25.h,
+                                      height: 25.sp,
                                       width: 130.w,
                                       color: const Color.fromARGB(
                                           55, 238, 171, 64),
