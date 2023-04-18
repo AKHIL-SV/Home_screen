@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:home_screen_jp/model/dates.dart';
 
 // colors
@@ -18,6 +19,18 @@ final theme = ThemeData(
   appBarTheme: const AppBarTheme(
     elevation: 0,
     backgroundColor: white,
+  ),
+  inputDecorationTheme: InputDecorationTheme(
+    filled: true,
+    fillColor: lightgray,
+    contentPadding: EdgeInsets.fromLTRB(13.w, 11.h, 0.w, 11.h),
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(16.sp),
+      borderSide: BorderSide.none,
+    ),
+    counterStyle: const TextStyle(
+      color: lightgray,
+    ),
   ),
 );
 

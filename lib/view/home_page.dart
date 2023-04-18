@@ -15,17 +15,12 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 56.sp,
         leadingWidth: 24.w,
-        title: Container(
+        title: SizedBox(
           height: 33.sp,
           width: 240.sp,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16.sp),
-            color: lightgray,
-          ),
-          padding: EdgeInsets.only(left: 13.w),
-          alignment: Alignment.centerLeft,
-          child: Text(
-            '北海道, 札幌市',
+          child: TextFormField(
+            cursorColor: orangeColor,
+            initialValue: '北海道, 札幌市',
             style: TextStyle(
               fontSize: 12.sp,
               fontWeight: FontWeight.w500,
